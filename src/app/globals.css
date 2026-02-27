@@ -44,26 +44,20 @@
 }
 
 :root {
-  --background: var(--color-background-light);
+  --background: #f6f7f8;
   --foreground: #0f172a;
-  /* slate-900 */
 }
 
-@layer base {
-  .dark {
-    --background: var(--color-background-dark);
-    --foreground: #f8fafc;
-    /* slate-100 */
-  }
+.dark {
+  --background: #101922;
+  --foreground: #f8fafc;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-display);
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
+  transition: color 0.2s, background-color 0.2s;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;

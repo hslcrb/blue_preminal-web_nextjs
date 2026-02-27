@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-200 antialiased overflow-x-hidden">
+      <body className="text-slate-900 dark:text-slate-100 font-display antialiased overflow-x-hidden">
         <div className="relative flex h-auto min-h-screen w-full flex-col group/design-root">
           <Navbar />
           <main className="layout-container flex h-full grow flex-col">
